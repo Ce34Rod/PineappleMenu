@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    background-color: #fff;
+    font-size: 17px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+header {
+    max-width: 1920px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    right: 0;
+    background-color: #313131;
+    height: 44px;
+    overflow: hidden;
+    transition: all 350ms ease-in;
+
+
+    &.black {
+        background-color: #000;
+        height: 400px;
+    }
+
+
+    .logo {
+        padding: 6px;
+        
+        
+        img {
+            max-width: 15.67px;
+        }
+    }
+
+
+
+    .menu {
+        position: relative;
+        padding: 18px 15px 0;
+
+        a {
+            width: 20px;
+            height: 20px;
+            display: block;
+            position: relative;
+
+            span {
+                width: 100%;
+                position: absolute;
+                text-indent: -999em;
+                transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+
+                &:before, &:after {
+                    content: '';
+                    height: 1px;
+                    background: #fff;
+                    width: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+                }
+
+                &:after {
+                    top: 6px;
+                }   
+            }
+    
+    
+    &.active span {
+    &:before {
+            transform: translateY(4px) translateX(1px) rotate(45deg);
+            }
+     &:after {
+            transform: translateY(-2px) translateX(1px) rotate(-45deg);
+             }       
+            }
+        }
+
+    }
+
+    ul.dropdown {
+        width: 100%;
+        margin: 0;
+        list-style: none;
+        clear: both;
+        padding: 30px;
+
+
+
+        li {
+            width: 100%;
+            height: 44px;
+            padding: 10px 0;
+
+            a {
+                color: #fff;
+                display: block;
+
+                &:hover {
+                    background-color: #232323;
+                }
+            }
+        }
+
+        li:not(:last-child) {
+            border-bottom: 1px solid #232323;
+        }
+    }
+    
+}
+
+main {
+    text-align: center;
+    padding: 4em;
+    background-color: #fafafa;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+}
+
+.col-6 {
+    width: 50%;
+    text-align: left;
+    float: left;
+}
+
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}

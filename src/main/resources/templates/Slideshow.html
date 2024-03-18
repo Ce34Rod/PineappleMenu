@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8"/>
+    <title></title>
+    <link rel="stylesheet" media="all" th:href="@{/styles/styles.css}">
+</head>
+<body>
+<div th:replace="~{fragments :: PineappleMenu}"></div>
+
+<section class="slide-container">
+    <div class="slider-wrapper">
+        <div class="slider">
+            <img class="blank" id="slide-1" src="images/wedding.JPG" alt="wedding picture 2"/>
+            <img class="blank" id="slide-2" src="images/wedding2.JPG" alt="wedding picture 2"/>
+            <img class="blank" id="slide-3" src="images/wedding3.JPG" alt="wedding picture 3"/>
+        </div>
+<!--        Remember to change body class-->
+        <div class="slider-nav">
+            <a class="blank" href="#slide-1"></a>
+            <a class="blank" href="#slide-2"></a>
+            <a class="blank" href="#slide-3"></a>
+        </div>
+    </div>
+
+</section>
+
+<div th:replace="~{fragments :: footer}"></div>
+
+</body>
+</html>

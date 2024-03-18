@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pineapple Menu</title>
+    <link rel="stylesheet" media="all" href="/styles/styles.css">
+</head>
+<body>
+    <header>
+
+        <div class="raw container">
+            <div class="col-6">
+            <div class="menu">
+                <a href="#">
+                    <span>Menu</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="col-6 logo">
+            <a href="#"><img src="images/CERNlogo.svg" alt="logo"></a>
+        </div>
+
+        <ul class="dropdown">
+            <li><a href="#">Weddings</a></li>
+            <li><a href="#">Portraits</a></li>
+            <li><a href="#">iPhone</a></li>
+            <li><a href="#">Watch</a></li>
+            <li><a href="#">TV</a></li>
+            <li><a href="#">Music</a></li>
+        </ul>
+
+
+
+        </div>   
+    </header>
+<!--    <main>-->
+<!--        <img src="images/wedding.JPG" alt="wedding">-->
+<!--    </main>-->
+
+
+    <script>
+
+        document.querySelector(".menu").addEventListener("click", toggleMenu);
+        let menuLink = document.querySelector(".menu a");
+        let header = document.querySelector("header");
+
+
+        function toggleMenu() {
+            menuLink.classList.toggle("active");
+            header.classList.toggle("black");
+        }
+    </script>
+    <script th:if="${@environment.acceptsProfiles('dev','local')}" src="http://localhost:35729/livereload.js"></script>
+</body>
+</html>

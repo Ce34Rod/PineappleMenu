@@ -164,4 +164,22 @@ z-index: 1;
 .slider-nav a:hover {
     opacity: 1;
 }
+
+.footer {
+    background-color: #333; /* Background color for the footer */
+    color: #fff; /* Text color for the footer */
+    padding: 20px 0; /* Padding for the footer */
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+    grid-gap: 10px; /* Gap between grid items */
+  }
+
+  .grid-item {
+    background-color: #333; /* Background color for grid items */
+    padding: 20px; /* Padding for grid items */
+    text-align: center; /* Center-align text within grid items */
+  }
 /*# sourceMappingURL=styles.css.map */

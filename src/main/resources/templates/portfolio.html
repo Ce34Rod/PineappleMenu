@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8"/>
+    <title></title>
+    <link rel="stylesheet" media="all" th:href="@{/styles/styles.css}">
+</head>
+<body>
+<div th:replace="~{fragments :: PineappleMenu}"></div>
+<section class="slide-container">
+    <div class="slider-wrapper">
+        <div class="slider">
+            <img class="blank" id="slide-1" src="images/wedding5.JPG" alt="wedding picture 2"/>
+            <img class="blank" id="slide-2" src="images/grad2.JPG" alt="wedding picture 2"/>
+            <img class="blank" id="slide-3" src="images/sofia2.JPG" alt="wedding picture 3"/>
+            <img class="blank" id="slide-4" src="images/portrait0.JPG" alt="wedding picture 3"/>
+            <img class="blank" id="slide-5" src="images/wedding4.JPG" alt="wedding picture 3"/>
+            <img class="blank" id="slide-6" src="images/wedding3.JPG" alt="wedding picture 3"/>
+            <img class="blank" id="slide-7" src="images/wedding3.JPG" alt="wedding picture 3"/>
+            <img class="blank" id="slide-8" src="images/wedding3.JPG" alt="wedding picture 3"/>
+            <img class="blank" id="slide-9" src="images/wedding3.JPG" alt="wedding picture 3"/>
+            <img class="blank" id="slide-10" src="images/wedding3.JPG" alt="wedding picture 3"/>
+        </div>
+        <!--        Remember to change body class-->
+        <div class="slider-nav">
+            <a class="blank" href="#slide-1"></a>
+            <a class="blank" href="#slide-2"></a>
+            <a class="blank" href="#slide-3"></a>
+            <a class="blank" href="#slide-4"></a>
+            <a class="blank" href="#slide-5"></a>
+            <a class="blank" href="#slide-6"></a>
+            <a class="blank" href="#slide-7"></a>
+            <a class="blank" href="#slide-8"></a>
+            <a class="blank" href="#slide-9"></a>
+            <a class="blank" href="#slide-10"></a>
+        </div>
+    </div>
+
+</section>
+<div th:replace="~{fragments :: footer}"></div>
+</body>
+</html>

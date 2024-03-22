@@ -11,4 +11,14 @@ public class HomeController {
     public String slideshow(Model model){
         return "home";
     }
+
+    @GetMapping("/jessica-lauren")
+    public String jessicalauren(Model model){
+        return "jessica-lauren";
+    }
+
+    @GetMapping("/slidingWindow")
+    public String slidingWindow (Model model) {
+        return "slidingWindow";
+    }
 }

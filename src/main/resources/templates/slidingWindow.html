@@ -3,33 +3,38 @@
 <head>
     <meta charset="UTF-8"/>
     <title></title>
-    <link rel="stylesheet" media="all" th:href="@{/styles/jessicalauren.css}">
+    <link rel="stylesheet" media="all" th:href="@{/styles/styles.css}">
+<style>
+    body, html {
+      height: 100%;
+    }
+
+    .parallax {
+      /* The image used */
+      background-image: url('img_parallax.jpg');
+
+      /* Full height */
+      height: 100%;
+
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+</style>
 </head>
 <body>
-<div id="vow-quote" class="sb sib-vow-quote" data-bid="vow-quote" style="height: 554px;">
-    <div class="ss-s ss-bg">
-        <div class="sb-m ssp-d" style="opacity: 0.68;">
-            <img class="sb-mc sbg-i slzy" data-src="//static.showit.co/2400/-N7emKdjS72-LOzYeGa_uA/53393/sneakpeeks-11.jpg" width="1200" height="1200" alt="" src="//static.showit.co/2400/-N7emKdjS72-LOzYeGa_uA/53393/sneakpeeks-11.jpg" style="width: 2730px; height: 1820px; inset: 0px auto auto; transform: translateY(-634.584941px);">
-        </div>
-        <div class="sc" style="width:1200px">
-            <div class="str-id strd" data-tran="vow-quote_0" data-tr="fadeIn" style="">
-                <div class="sie-vow-quote_0 se" data-sid="vow-quote_0" style="transform: scale(1, 1) translate(0px);">
-                    <p class="se-t sie-vow-quote_0-text st-m-title st-d-title se-rc">"jess has a way of making you feel like you've been friends for life, and brings so much joy to your day."<br></p>
-                </div>
-            </div>
-            <div class="sie-vow-quote_1 se" data-sid="vow-quote_1" style="transform: scale(1, 1) translate(0px);">
-                <h3 class="se-t sie-vow-quote_1-text st-m-subheading st-d-subheading se-rc">read more kind words</h3>
-            </div>
-            <a href="#/" target="_self" class="sie-vow-quote_2 se se-sl" data-sid="vow-quote_2" data-scrollto="#reviews" style="transform: scale(1, 1) translate(0px) rotate(90deg);">
-                <div class="se-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M158.53,473c-4.45,0-8.9-1.11-12.23-4.45a16.12,16.12,0,0,1,0-23.35L334.23,257.25,146.3,69.33A16.51,16.51,0,0,1,169.65,46l199,199a16.12,16.12,0,0,1,0,23.35l-199,200.15A14.28,14.28,0,0,1,158.53,473Z"></path>
-                    </svg>
-                </div>
-            </a>
-        </div>
-    </div>
+
+<div class="parallax"></div>
+
+<div style="height:1000px;background-color:red;font-size:36px">
+    Scroll Up and Down this page to see the parallax scrolling effect.
+    This div is just here to enable scrolling.
+    Tip: Try to remove the background-attachment property to remove the scrolling effect.
 </div>
+
+<div class="parallax"></div>
 
 </body>
 </html>

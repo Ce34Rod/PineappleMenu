@@ -2,9 +2,26 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org/">
 <head>
     <meta charset="UTF-8"/>
-    <title></title>
+    <title>Pricing Page</title>
+    <link rel="stylesheet" media="all" th:href="@{/styles/styles.css}">
 </head>
 <body>
+<div th:replace="~{fragments :: PineappleMenu}"></div>
 
+<div class="pricing">
+
+<h1 class="pricing">Pricing</h1>
+
+<p class="pricing">
+    I have recently started doing photography professionally.
+    A win-win situation since you get a capable photographer at a fraction of the price.
+    You will receive photos comparable to an established and hard to book photography studio or photographer.
+    I am happy to gain the experience and practice my photography. I know lighting, posing, and how to make people love their pictures.
+    You should work with me because I take and edit great pictures, prioritize comfort and respect for everyone I work with, and love doing this.
+</p>
+
+</div>
+
+<div th:replace="~{fragments :: footer}"></div>
 </body>
 </html>

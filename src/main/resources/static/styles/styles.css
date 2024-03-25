@@ -182,4 +182,21 @@ z-index: 1;
     padding: 20px; /* Padding for grid items */
     text-align: center; /* Center-align text within grid items */
   }
+
+
+.pricing {
+justify-content: center;
+align-items: center;
+
+}
+h1.pricing{
+ font-size: 42px;
+ text-align: center;
+ margin-top: 19rem;
+}
+
+p.pricing {
+font-size: 32px;
+ text-align: center;
+}
 /*# sourceMappingURL=styles.css.map */

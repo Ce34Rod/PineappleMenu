@@ -3,8 +3,99 @@
 <head>
     <meta charset="UTF-8"/>
     <title></title>
+    <link rel="stylesheet" media="all" th:href="@{/styles/styles.css}">
+    <style>
+        body, html {
+          height: 100%;
+        }
+
+        .parallax {
+          /* The image used */
+          background-image: url('../images/wedding3.JPG');
+
+          /* Full height */
+          height: 50%;
+
+          /* Create the parallax scrolling effect */
+          background-attachment: fixed;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+    </style>
 </head>
 <body>
+<div th:replace="~{fragments :: PineappleMenu}"></div>
+<div class="parallax"></div>
+
+<div style="height:100px;background-color:black;font-size:36px">
+    Scroll Up and Down this page to see the parallax scrolling effect.
+    This div is just here to enable scrolling.
+    Tip: Try to remove the background-attachment property to remove the scrolling effect.
+</div>
+
+
+
+<section class="slide-container">
+    <div class="slider-wrapper">
+        <div class="slider">
+            <img class="blank" id="slide-1" src="images/wedding.JPG" alt="wedding picture 2"/>
+            <img class="blank" id="slide-2" src="images/wedding2.JPG" alt="wedding picture 2"/>
+            <img class="blank" id="slide-3" src="images/wedding3.JPG" alt="wedding picture 3"/>
+        </div>
+        <!--        Remember to change body class-->
+        <div class="slider-nav">
+            <a class="blank" href="#slide-1"></a>
+            <a class="blank" href="#slide-2"></a>
+            <a class="blank" href="#slide-3"></a>
+        </div>
+    </div>
+
+</section>
+
+
+<section class="slide-container">
+    <div class="slider-wrapper">
+        <div class="slider">
+            <img class="blank" id="slide1-1" src="images/grad0.jpeg" alt="wedding picture 2"/>
+            <img class="blank" id="slide1-2" src="images/grad1.JPG" alt="wedding picture 2"/>
+            <img class="blank" id="slide1-3" src="images/grad2.JPG" alt="wedding picture 3"/>
+        </div>
+        <!--        Remember to change body class-->
+        <div class="slider-nav">
+            <a class="blank" href="#slide1-1"></a>
+            <a class="blank" href="#slide1-2"></a>
+            <a class="blank" href="#slide1-3"></a>
+        </div>
+    </div>
+
+</section>
+
+<section class="slide-container">
+    <div class="slider-wrapper">
+        <div class="slider">
+            <img class="blank" id="slide2-1" src="images/sofia0.JPG" alt="wedding picture 2"/>
+            <img class="blank" id="slide2-2" src="images/sofia1.JPG" alt="wedding picture 2"/>
+            <img class="blank" id="slide2-3" src="images/sofia2.JPG" alt="wedding picture 3"/>
+        </div>
+        <!--        Remember to change body class-->
+        <div class="slider-nav">
+            <a class="blank" href="#slide2-1"></a>
+            <a class="blank" href="#slide2-2"></a>
+            <a class="blank" href="#slide2-3"></a>
+        </div>
+    </div>
+
+
+</section>
+<div style="height:100px;background-color:black;font-size:36px">
+    Scroll Up and Down this page to see the parallax scrolling effect.
+    This div is just here to enable scrolling.
+    Tip: Try to remove the background-attachment property to remove the scrolling effect.
+</div>
+<div class="parallax"></div>
+
+<div th:replace="~{fragments :: footer}"></div>
 
 </body>
 </html>

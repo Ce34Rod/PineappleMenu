@@ -4,6 +4,7 @@
     <meta charset="UTF-8"/>
     <title></title>
     <link rel="stylesheet" media="all" th:href="@{/styles/styles.css}">
+    <link href="https://fonts.googleapis.com/css2?family=Princess+Sofia&display=swap" rel="stylesheet">
     <style>
         body, html {
           height: 100%;
@@ -12,6 +13,7 @@
         .parallax {
           /* The image used */
           background-image: url('../images/wedding5.JPG');
+          text-align: center;
 
           /* Full height */
           height: 60%;
@@ -26,19 +28,16 @@
 
          /* Style for the overlay container */
   .overlay-container {
-    position: relative;
-    width: 100%; /* Full width */
+    position: fixed;
+    padding: 2rem;
+    width: 10%; /* Full width */
     height: 40vh; /* Full height of viewport */
     overflow: hidden; /* Hide overflowing content */
   }
 
   /* Style for the overlay text box */
   .overlay-textbox {
-    position: absolute;
-    top: 50%; /* Position at the vertical center */
-    left: 50%; /* Position at the horizontal center */
-    transform: translate(-50%, -50%); /* Center the element */
-    padding: 20px;
+    float: left;
     background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
     border: 1px solid #000;
     border-radius: 5px;
@@ -49,11 +48,8 @@
 <body>
 <div th:replace="~{fragments :: PineappleMenu}"></div>
 <div class="parallax"></div>
-
+<div class="overParallax">"Wow the pictures look amazing." -Literally everybody </div>
 <div style="height:100px;background-color:black;font-size:36px">
-    Scroll Up and Down this page to see the parallax scrolling effect.
-    This div is just here to enable scrolling.
-    Tip: Try to remove the background-attachment property to remove the scrolling effect.
 </div>
 
 <div class="overlay-container">
@@ -90,9 +86,9 @@
 <section class="slide-container">
     <div class="slider-wrapper">
         <div class="slider">
-            <img class="blank" id="slide1-1" src="images/grad0.jpeg" alt="wedding picture 2"/>
+            <img class="blank" id="slide1-1" src="images/grad2.JPG" alt="wedding picture 2"/>
             <img class="blank" id="slide1-2" src="images/grad1.JPG" alt="wedding picture 2"/>
-            <img class="blank" id="slide1-3" src="images/grad2.JPG" alt="wedding picture 3"/>
+            <img class="blank" id="slide1-3" src="images/grad0.jpeg" alt="wedding picture 3"/>
         </div>
         <!--        Remember to change body class-->
         <div class="slider-nav">
@@ -122,9 +118,6 @@
 
 </section>
 <div style="height:100px;background-color:black;font-size:36px">
-    Scroll Up and Down this page to see the parallax scrolling effect.
-    This div is just here to enable scrolling.
-    Tip: Try to remove the background-attachment property to remove the scrolling effect.
 </div>
 <div class="parallax"></div>
 

@@ -199,4 +199,15 @@ p.pricing {
 font-size: 32px;
  text-align: center;
 }
+
+
+.overParallax {
+  position: absolute;
+  font-size: 30px;
+  font-family: "Arial";
+  color: white;
+  top: 64%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 /*# sourceMappingURL=styles.css.map */

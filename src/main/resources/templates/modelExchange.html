@@ -11,10 +11,10 @@
 
         .parallax {
           /* The image used */
-          background-image: url('../images/wedding3.JPG');
+          background-image: url('../images/wedding5.JPG');
 
           /* Full height */
-          height: 50%;
+          height: 60%;
 
           /* Create the parallax scrolling effect */
           background-attachment: fixed;
@@ -22,6 +22,28 @@
           background-repeat: no-repeat;
           background-size: cover;
         }
+
+
+         /* Style for the overlay container */
+  .overlay-container {
+    position: relative;
+    width: 100%; /* Full width */
+    height: 40vh; /* Full height of viewport */
+    overflow: hidden; /* Hide overflowing content */
+  }
+
+  /* Style for the overlay text box */
+  .overlay-textbox {
+    position: absolute;
+    top: 50%; /* Position at the vertical center */
+    left: 50%; /* Position at the horizontal center */
+    transform: translate(-50%, -50%); /* Center the element */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    border: 1px solid #000;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Drop shadow */
+  }
     </style>
 </head>
 <body>
@@ -34,7 +56,18 @@
     Tip: Try to remove the background-attachment property to remove the scrolling effect.
 </div>
 
+<div class="overlay-container">
+    <!-- Your existing content goes here -->
+    <h1>Welcome to My Website</h1>
+    <p>This is some existing content.</p>
 
+    <!-- Overlay text box -->
+    <div class="overlay-textbox">
+        <h2>Overlay Text Box</h2>
+        <p>This is a text box that sits on top of the present page.</p>
+        <!-- You can add form elements like input fields, buttons, etc., inside this div -->
+    </div>
+</div>
 
 <section class="slide-container">
     <div class="slider-wrapper">

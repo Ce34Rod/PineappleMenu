@@ -16,10 +16,10 @@
           text-align: center;
 
           /* Full height */
-          height: 60%;
+          height: 40%;
 
           /* Create the parallax scrolling effect */
-          background-attachment: fixed;
+          background-attachment: initial;
           background-position: center;
           background-repeat: no-repeat;
           background-size: cover;
@@ -28,7 +28,7 @@
 
          /* Style for the overlay container */
   .overlay-container {
-    position: fixed;
+    position: relative;
     padding: 2rem;
     width: 10%; /* Full width */
     height: 40vh; /* Full height of viewport */
@@ -52,23 +52,12 @@
 <div style="height:100px;background-color:black;font-size:36px">
 </div>
 
-<div class="overlay-container">
-    <!-- Your existing content goes here -->
-    <h1>Welcome to My Website</h1>
-    <p>This is some existing content.</p>
 
-    <!-- Overlay text box -->
-    <div class="overlay-textbox">
-        <h2>Overlay Text Box</h2>
-        <p>This is a text box that sits on top of the present page.</p>
-        <!-- You can add form elements like input fields, buttons, etc., inside this div -->
-    </div>
-</div>
 
 <section class="slide-container">
     <div class="slider-wrapper">
         <div class="slider">
-            <img class="blank" id="slide-1" src="images/wedding.JPG" alt="wedding picture 2"/>
+            <img class="blank" id="slide-1" src="images/wedding6.JPG" alt="wedding picture 2"/>
             <img class="blank" id="slide-2" src="images/wedding2.JPG" alt="wedding picture 2"/>
             <img class="blank" id="slide-3" src="images/wedding3.JPG" alt="wedding picture 3"/>
         </div>
@@ -120,6 +109,19 @@
 <div style="height:100px;background-color:black;font-size:36px">
 </div>
 <div class="parallax"></div>
+
+<div class="overlay-container">
+    <!-- Your existing content goes here -->
+    <h1>Welcome to My Website</h1>
+    <p></p>
+
+    <!-- Overlay text box -->
+    <div class="overlay-textbox">
+        <h2>Overlay Text Box</h2>
+        <p>This is a text box that sits on top of the present page.</p>
+        <!-- You can add form elements like input fields, buttons, etc., inside this div -->
+    </div>
+</div>
 
 <div th:replace="~{fragments :: footer}"></div>
 
